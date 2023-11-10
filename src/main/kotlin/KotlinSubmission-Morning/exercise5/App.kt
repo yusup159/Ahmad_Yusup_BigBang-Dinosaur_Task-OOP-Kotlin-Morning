@@ -43,7 +43,6 @@ fun main() {
     Dasa Impi ->7: jalan 1x, lari 2x, makan 3x, minum 4x, lompat 5x, duduk 6x
     LogicLiberators -> jalan 2x, lari 1x, makan 5x, minum 2x, lompat 3x, duduk 1x
     Fifty-One -> jalan 2x, lari 1x, makan 2x, minum 1x, lompat 2x, duduk 4x
-    Fantastic Ten -> jalan 2x, lari 4x, makan 3x, minum 2x, lompat 1x, duduk 2x
 
     ===============Class B Morning===============
     Infinine -> jalan 2x, lari 4x, makan 3x, minum 2x, lompat 1x, duduk 2x

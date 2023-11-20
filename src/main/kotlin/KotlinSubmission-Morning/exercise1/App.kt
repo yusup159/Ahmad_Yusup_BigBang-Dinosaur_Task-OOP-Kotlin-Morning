@@ -14,7 +14,7 @@ fun myProfile() {
     val lastname = "Yusup"
     val age = 20
     val status = false
-    println("Nama Saya :$firstname + $lastname")
+    println("Nama Saya :$firstname  $lastname")
     println("Umur : $age tahun ")
     if (status){
         println("Status : Singgle")
@@ -70,7 +70,7 @@ fun myTeam(): List<Any> {
         "Muhammad Zaki Raihan",
         "Rafi Kahfi Yugi")
 
-    val myName = anggota.get(10)
+    val myName = anggota.get(0)
 
     return listOf(myName)
 

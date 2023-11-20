@@ -10,6 +10,17 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val firstname= "Ahmad"
+    val lastname = "Yusup"
+    val age = 20
+    val status = false
+    println("Nama Saya :$firstname + $lastname")
+    println("Umur : $age tahun ")
+    if (status){
+        println("Status : Singgle")
+    }else {
+        println("Status : Tidak Singgle")
+    }
 
 }
 
@@ -19,7 +30,23 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
-    return ""
+    println("Nama Group : $groupId")
+
+    println("Daftar Anggota : ")
+    var i = 0
+    for(member in groupMember) {
+        i++
+        println("$i. $member")
+    }
+
+    println("Sesi : $session")
+
+    return """
+        Informasi Group
+        Grup : $groupId
+        Daftar Anggota : ${groupMember.size}
+        Sesi : $session
+    """.trimIndent()
 }
 
 /**
@@ -30,7 +57,23 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  */
 fun myTeam(): List<Any> {
 
-    return listOf()
+    val anggota = listOf(
+        "Ahmad Yusup",
+        "Dimas Anggoro Harahap",
+        "Yassar Muwwafaq",
+        "Inayatul maula",
+        "Adella Maulana Annur Ramadhan",
+        "Alvito Kurnia Fahrio",
+        "Anggi Putri Meriani",
+        "Billy Dwi Prakoso",
+        "Fadhlan Akbarullah",
+        "Muhammad Zaki Raihan",
+        "Rafi Kahfi Yugi")
+
+    val myName = anggota.get(10)
+
+    return listOf(myName)
+
 }
 
 /**
@@ -41,8 +84,21 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf<String>("Kak Joy", "Kak Maulana")
+    val countOfGroup = arrayOf<String>(
+        "Ahmad Yusup",
+        "Dimas Anggoro Harahap",
+        "Yassar Muwwafaq",
+        "Inayatul maula",
+        "Adella Maulana Annur Ramadhan",
+        "Alvito Kurnia Fahrio",
+        "Anggi Putri Meriani",
+        "Billy Dwi Prakoso",
+        "Fadhlan Akbarullah",
+        "Muhammad Zaki Raihan",
+        "Rafi Kahfi Yugi"
+    )
+    return mentor.size+countOfGroup.size
 
     return 0
 }
@@ -62,6 +118,19 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail("BigBang & Dinosaur",
+        listOf(
+        "Ahmad Yusup",
+        "Dimas Anggoro Harahap",
+        "Yassar Muwwafaq",
+        "Inayatul maula",
+        "Adella Maulana Annur Ramadhan",
+        "Alvito Kurnia Fahrio",
+        "Anggi Putri Meriani",
+        "Billy Dwi Prakoso",
+        "Fadhlan Akbarullah",
+        "Muhammad Zaki Raihan",
+        "Rafi Kahfi Yugi"),
+        "Morning B")
 
 }
